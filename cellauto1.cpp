@@ -1,5 +1,6 @@
 //1 dimensional elementary cellular automata based on binary rules
 // Author: Shreyak Chakraborty (C) 2017
+//License: GNU GPLv3
 
 # include <iostream>
 # include <graphics.h>
