@@ -1,9 +1,10 @@
-//1 dimensional elementary cellular automata based on binary rules
+//1 dimensional multi-state elementary cellular automata based on binary rules
+//uses the WinBGIm library - https://github.com/knroy/WinBGIm
 // Author: Shreyak Chakraborty (C) 2017
 //License: GNU GPLv3
 
 # include <iostream>
-# include <graphics.h>
+# include <graphics.h>     //uses the WinBGIm library
 # include <conio.h>
 
 using namespace std;
@@ -18,14 +19,14 @@ struct cell
     int life;
 };
 
-void cell::draw(int x,int y)
+void cell::draw(int x,int y)  //draws cell based on life of cell
 {
     int cl;
 
     if(life==0)
         cl=RED;
     if(life==1)
-        cl=YELLOW;
+        cl=GREEN;
     if(life==2)
         cl=YELLOW;
     if(life==3)
